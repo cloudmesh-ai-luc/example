@@ -50,7 +50,7 @@ programmatic access for downstream scripts.
 
 | In‑Scope | Out‑Of‑Scope |
 |----------|--------------|
-| • Containerising three LLMs (OpenAI API, Llama‑2, Mistral) | • Using existing LLMs that fit within the resource constraints |
+| • Containerising three LLMs (OpenAI API, Llama‑2, Mistral) | Training new models |
 | • LLM‑Chooser service (REST API) | • Enterprise‑grade SLA / 99.9 % uptime guarantee |
 | • VS Code CLI extension & Python SDK | • Full multi‑region deployment |
 | • IaC (Terraform), CI/CD (GitHub Actions) | • Data‑privacy compliance beyond class‑level demonstration |
