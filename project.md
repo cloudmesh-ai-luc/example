@@ -1,22 +1,13 @@
 
 ## Project Proposal – Multi‑LLM Selection Service with VS Code CLI & OpenWebUI Integration 
 
-* **Course:** Cloud Computing, DevOps, and AI  
-* **Team:** *Albert Zweistein* 
-* **Date:** *Dec. 10, 2026*  
-* **Instructor:** *Gregor von Laszewski*  
-
----
-
-### 1. Title Page  
-
-| Item                     | Fill‑in                                                               |
+|                          |                                                               |
 |--------------------------|-----------------------------------------------------------------------|
-| **Project Title**        | Multi‑LLM Selection Service with VS Code CLI & OpenWebUI Integration |
+| **Course:**              | Cloud Computing, DevOps, and AI | 
 | **Team Members**         | - *Alice* – DevOps Engineer  <br> - *Bob* – ML Engineer  <br> - *Cara* – Full‑stack Developer |
 | **Contact**              | email@example.com | phone: 123‑456‑7890 |
-| **Submitted to**         | *[Instructor / Department]* |
-| **Date**                 | *[Month Day, Year]* |
+| **Instructor**           | Gregor von Laszewski |
+| **Date**                 | *Dec. 10 2026* |
 
 ---
 
