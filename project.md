@@ -22,23 +22,24 @@
 
 ### 2. Executive Summary (150‑250 words)  
 
-> **Problem:**  Modern AI‑enabled applications often need to switch between different large language models (LLMs)
-> – e.g., a fast, low‑cost model for routine queries and a larger, more creative model for brainstorming.
-> Currently our lab uses a single LLM deployed on a VM; swapping models requires manual re‑configuration and downtime.  
+**Problem:**  Modern AI‑enabled applications often need to switch between different large language models (LLMs)
+– e.g., a fast, low‑cost model for routine queries and a larger, more creative model for brainstorming.
+Currently our lab uses a single LLM deployed on a VM; swapping models requires manual re‑configuration and downtime.  
 
-> **Proposed solution:**  Deploy **three containerised LLM back‑ends** (e.g., OpenAI GPT‑3.5‑Turbo,
-> Llama‑2‑7B, and a locally‑hosted Mistral‑7B) on **AWS ECS Fargate** (or Azure Container Instances).
-> Build a **REST‑ful “LLM‑Chooser” service** that receives a request, inspects a lightweight meta‑parameter (`mode=fast|creative|balanced`),
-> and forwards the prompt to the appropriate model.  The service will be **exposed via OpenWebUI** for a web UI, while a
-> **VS Code CLI extension** (`llm-select`) lets developers invoke the chooser directly from the
-> terminal (`llm-select --mode creative "Write a poem"`).  A small **Python SDK** (`llm_client.py`) provides
-> programmatic access for downstream scripts.  
+**Proposed solution:**  Deploy **three containerised LLM back‑ends** (e.g., OpenAI GPT‑3.5‑Turbo,
+Llama‑2‑7B, and a locally‑hosted Mistral‑7B) on **AWS ECS Fargate** (or Azure Container Instances).
+Build a **REST‑ful “LLM‑Chooser” service** that receives a request, inspects a lightweight meta‑parameter (`mode=fast|creative|balanced`),
+and forwards the prompt to the appropriate model.  The service will be **exposed via OpenWebUI** for a web UI, while a
+**VS Code CLI extension** (`llm-select`) lets developers invoke the chooser directly from the
+terminal (`llm-select --mode creative "Write a poem"`).  A small **Python SDK** (`llm_client.py`) provides
+programmatic access for downstream scripts.  
 
-> **Benefits:**  
-> • Zero‑downtime model switching – users simply change the `mode` flag.  
-> • Cost‑aware routing – the fast mode uses the cheapest model, saving ~ 40 % on API spend.  
-> • Dev‑friendly interface – VS Code CLI + Python SDK streamline experimentation.  
-> • Hands‑on experience with IaC (Terraform), CI/CD (GitHub Actions), container orchestration, and model serving.  
+**Benefits:**  
+
+- Zero‑downtime model switching – users simply change the `mode` flag.  
+- Cost‑aware routing – the fast mode uses the cheapest model, saving ~ 40 % on API spend.  
+- Dev‑friendly interface – VS Code CLI + Python SDK streamline experimentation.  
+- Hands‑on experience with IaC (Terraform), CI/CD (GitHub Actions), container orchestration, and model serving.  
 
 ---
 
