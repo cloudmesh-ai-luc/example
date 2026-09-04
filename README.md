@@ -1,5 +1,5 @@
 # example
 
-Gregor von Laszewski
-laszewski@gmail.com
+* Gregor von Laszewski
+* laszewski@gmail.com
 
