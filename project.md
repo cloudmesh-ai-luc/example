@@ -143,6 +143,11 @@ The extension will invoke the Python SDK under the hood and print the model’s 
 
 ### 7. Resources & Budget  
 
+To keep the budegt real small and do most of the development on the local computer,  we develop a mock llm service, that does not actually uses an llm but returns information in th esame format an LLM would return.  Before any cloud services are used, the implementation is done locally with the mock service, then it is replicated on the cloud. In the fnal step we will use real llm services, but will more carefully evaluate which are realistic. We propose t chose the smallest andcheapest possible models. The possibly not even need tou use GPUs.
+A configuration file in yaml will be used to describe the nature of the service and the resource need and where they are hosted. The chosen DevOps framework will then provision and stage the services.
+
+As part of this we plan also to investigate if hosting on kubernetes or EC2 like VMs is more easy to do and costeffective. We will only implement one solution however.
+
 | Resource | Qty | Cost (USD) | Reason |
 |----------|-----|------------|--------|
 | AWS Fargate (vCPU 0.5, 1 GB RAM) – 3 services – 30 days | – | $80 | Container execution |
