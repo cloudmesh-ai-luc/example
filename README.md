@@ -1,5 +1,8 @@
 # Gregor von Laszewski
 
+Note:
+*  replace `<repor>/assignments/week3.md` and others with your real links.
+
 * **Week 3**
 * [ ] Assignment W3.1: VM on Jetstream (Due Sep 17, 2026, 9am)
   * [ ] Start a VM on Jetstream and follow the tutorial provided.
@@ -24,6 +27,10 @@
 * [ ] Assignment W3.4: Compare (Due Sep 17, 2026, 9am)
   * [ ] Compare your experience between starting a VM on your local machine vs using Chameleon Cloud.
   * [ ] Put all assignment answers into `<repor>/assignments/week3.md`.
+     
+* [ ] Assignment W3.5: README.md (Due Sep 17, 2026, 9am)
+  * [ ] put your link here  
+
 
 
 * **Week 2**
