@@ -27,64 +27,64 @@
 
 
 * **Week 2**
-* [ ] Assignment W2.1: Google Account, Piazza Account post cleanup (Due Sep 10, 2026, 9am)
-* [ ] Locate your account post in Piazza and add your google account.
-* [ ] Correct your Chameleon ID to the registered email.
-* [ ] Fix your subject line to `Firstname Lastname (lucid@luc.edu)`.
+  * [ ] Assignment W2.1: Google Account, Piazza Account post cleanup (Due Sep 10, 2026, 9am)
+  * [ ] Locate your account post in Piazza and add your google account.
+  * [ ] Correct your Chameleon ID to the registered email.
+  * [ ] Fix your subject line to `Firstname Lastname (lucid@luc.edu)`.
 
 
 * [ ] Assignment W2.2: GitHub Repository (Due Sep 10, 2026, 9am)
-* [ ] Verify that you can write into a file in your assigned GitHub repository.
-* [ ] Put something useful into the README such as your first and last name.
-* [ ] Upload your public key.
+  * [ ] Verify that you can write into a file in your assigned GitHub repository.
+  * [ ] Put something useful into the README such as your first and last name.
+  * [ ] Upload your public key.
 
 
 * [ ] Assignment W2.3: Backup Your Computer (Due Sep 10, 2026, 9am)
-* [ ] Write a one‑paragraph explanation (4–6 sentences) on why backing up a computer is important.
-* [ ] List three real‑world consequences of not having a backup.
-* [ ] Choose one backup method and outline the setup steps.
-* [ ] Create a weekly backup schedule (day, time, what to back up).
-* [ ] Research an example from cloud computing where a missing backup strategy led to issues and write a short incident case.
-* [ ] Submit to `/assignments/week2/backup.md`.
+  * [ ] Write a one‑paragraph explanation (4–6 sentences) on why backing up a computer is important.
+  * [ ] List three real‑world consequences of not having a backup.
+  * [ ] Choose one backup method and outline the setup steps.
+  * [ ] Create a weekly backup schedule (day, time, what to back up).
+  * [ ] Research an example from cloud computing where a missing backup strategy led to issues and write a short incident case.
+  * [ ] Submit to `/assignments/week2/backup.md`.
 
 
 * [ ] Assignment W2.4: Local VM (Due Sep 10, 2026, 9am)
-* [ ] Install a terminal on Windows (Git Bash/WSL).
-* [ ] Pick a hypervisor (VirtualBox, VMware, Hyper-V, Multipass).
-* [ ] Create and start a minimal VM (e.g., Ubuntu 22.04).
-* [ ] Capture proof of login with a terminal screenshot (≤ 800×600 px) showing your prompt and a command.
-* [ ] Write/update the tutorial in `assignments/week1/local-vm.md` and save the screenshot as `assignments/week1/vm-login.png`.
+  * [ ] Install a terminal on Windows (Git Bash/WSL).
+  * [ ] Pick a hypervisor (VirtualBox, VMware, Hyper-V, Multipass).
+  * [ ] Create and start a minimal VM (e.g., Ubuntu 22.04).
+  * [ ] Capture proof of login with a terminal screenshot (≤ 800×600 px) showing your prompt and a command.
+  * [ ] Write/update the tutorial in `assignments/week1/local-vm.md` and save the screenshot as `assignments/week1/vm-login.png`.
 
 
 * [ ] Assignment W2.5: Project proposal (Due Sep 10, 2026, 9am)
-* [ ] Start working towards a project proposal and fill out administrative fields and text.
+  * [ ] Start working towards a project proposal and fill out administrative fields and text.
 
 
 * **Week 1**
-* [ ] Assignment W1.1: What hardware do you have? (Past Due)
-* [ ] Fill out the LUC Hardware Questionnaire.
+  * [ ] Assignment W1.1: What hardware do you have? (Past Due)
+  * [ ] Fill out the LUC Hardware Questionnaire.
 
 
 * [ ] Assignment W1.2: Lecture review (Past Due)
-* [ ] Review all sections under LECTURES -> INTRODUCTIONS and post questions on Piazza.
+  * [ ] Review all sections under LECTURES -> INTRODUCTIONS and post questions on Piazza.
 
 
 * [ ] Assignment W1.3: Look over the assignment sections (Past Due)
-* [ ] Review all sections under ASSIGNMENTS (Overview and weekly sections).
+  * [ ] Review all sections under ASSIGNMENTS (Overview and weekly sections).
 
 
 * [ ] Assignment W1.4: Create class accounts (Past Due)
-* [ ] Create an account on access-ci.org.
-* [ ] Create an account on chameleoncloud.org.
-* [ ] Set up a GitHub account.
-* [ ] Post account information to Piazza under the accounts category.
+  * [ ] Create an account on access-ci.org.
+  * [ ] Create an account on chameleoncloud.org.
+  * [ ] Set up a GitHub account.
+  * [ ] Post account information to Piazza under the accounts category.
 
 
 * [ ] Assignment W1.5: Work ahead: Refresh knowledge about Python and Linux (Past Due)
-* [ ] Review optional material in the class documentation.
+  * [ ] Review optional material in the class documentation.
 
 
 * [ ] Assignment W1.6: Improve the Web Site (Past Due)
-* [ ] Update errors or notify instructors throughout the semester.
+  * [ ] Update errors or notify instructors throughout the semester.
 
 
