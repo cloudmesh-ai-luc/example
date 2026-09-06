@@ -5,7 +5,8 @@
 Note:
 *  replace `<repor>/assignments/week3.md` and others with your real links.
 
-* **Week 3**
+## Week 3
+
 * [ ] Assignment W3.1: VM on Jetstream (Due Sep 17, 2026, 9am)
   * [ ] Start a VM on Jetstream and follow the tutorial provided.
   * [ ] Improve the tutorial while creating pull requests in the lecture notes if you see issues.
@@ -35,7 +36,8 @@ Note:
 
 
 
-* **Week 2**
+ ## Week 2
+  
   * [ ] Assignment W2.1: Google Account, Piazza Account post cleanup (Due Sep 10, 2026, 9am)
   * [ ] Locate your account post in Piazza and add your google account.
   * [ ] Correct your Chameleon ID to the registered email.
@@ -69,7 +71,8 @@ Note:
   * [ ] Start working towards a project proposal and fill out administrative fields and text. [LINK]
 
 
-* **Week 1**
+# Week 1
+
   * [ ] Assignment W1.1: What hardware do you have? (Past Due) [LINK]
   * [ ] Fill out the LUC Hardware Questionnaire.
 
