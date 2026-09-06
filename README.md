@@ -1,9 +1,9 @@
 # Gregor von Laszewski
 
+*  Accounts: [LINK to your Piazza account post]
+
 Note:
 *  replace `<repor>/assignments/week3.md` and others with your real links.
-
-*  [LINK to your Piazza account post]
 
 * **Week 3**
 * [ ] Assignment W3.1: VM on Jetstream (Due Sep 17, 2026, 9am)
