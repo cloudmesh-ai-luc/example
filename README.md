@@ -3,7 +3,8 @@
 *  Accounts: [LINK to your Piazza account post]
 
 Note:
-*  replace `<repor>/assignments/week3.md` and others with your real links.
+*  put files in `<repor>/assignments/week3/`
+*  Update all YOURREPO
 
 ## Week 3
 
@@ -11,6 +12,7 @@ Note:
   * [ ] Start a VM on Jetstream and follow the tutorial provided.
   * [ ] Improve the tutorial while creating pull requests in the lecture notes if you see issues.
   * [ ] Document your activity with a screenshot of the terminal (800x600).
+  * [ ] [VM.MD](https://github.com/cloudmesh-ai-luc/YOURREPO/blob/main/assignments/week3/vm.md)
 
 
 * [ ] Assignment W3.2: VM on Chameleon Cloud (Due Sep 17, 2026, 9am)
@@ -20,25 +22,29 @@ Note:
   * [ ] Make a reservation not exceeding 1 hour.
   * [ ] Start up a VM using a Chameleon Cloud image for Ubuntu 24.04 using the smallest image size possible.
   * [ ] Document your activity with a screenshot of the terminal (800x600).
+  * [ ] [VM.MD](https://github.com/cloudmesh-ai-luc/YOURREPO/blob/main/assignments/week3/vm.md)
 
 
 * [ ] Assignment W3.3: OPTIONAL: VM on public cloud (Due Sep 17, 2026, 9am)
   * [ ] Optional: Create a VM on a cloud of your choice (AWS, Azure, Google) using the free tier.
   * [ ] Document with screenshots how you created your account, ensuring sensitive information is blurred out.
+  * [ ] [VM.MD](https://github.com/cloudmesh-ai-luc/YOURREPO/blob/main/assignments/week3/vm.md)
 
 
 * [ ] Assignment W3.4: Compare (Due Sep 17, 2026, 9am)
   * [ ] Compare your experience between starting a VM on your local machine vs using Chameleon Cloud.
   * [ ] Put all assignment answers into `<repor>/assignments/week3.md`. [LINK]
+  * [ ] [VM.MD](https://github.com/cloudmesh-ai-luc/YOURREPO/blob/main/assignments/week3/vm.md)
      
 * [ ] Assignment W3.5: README.md (Due Sep 17, 2026, 9am)
   * [ ] put your link here  [LINK]
+     
+ * [ ] Assignment W3.6 git from commandline
+   * [ ] put the url of a pull request here
 
-
-
- ## Week 2
+## Week 2
   
-  * [ ] Assignment W2.1: Google Account, Piazza Account post cleanup (Due Sep 10, 2026, 9am)
+* [ ] Assignment W2.1: Google Account, Piazza Account post cleanup (Due Sep 10, 2026, 9am)
   * [ ] Locate your account post in Piazza and add your google account.
   * [ ] Correct your Chameleon ID to the registered email.
   * [ ] Fix your subject line to `Firstname Lastname (lucid@luc.edu)`.
