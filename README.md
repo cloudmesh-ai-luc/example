@@ -6,6 +6,72 @@ Note:
 *  put files in `<repor>/assignments/week3/`
 *  Update all YOURREPO
 
+
+## Week 4:  Due Sep 24, 2026, 9am
+
+- [ ] "Assignment W4.1 VM on local machine via Makefile"
+
+    - [ ] Pick a local VM framework. Make sure it is installed. Which one did you pick? _________
+    - [ ] Write a Makefile with all the targets that you need (which are they?) to manage a single VM
+    - [ ] Can you manage multiple machines? provide a sample in week4/multiple-vms.md
+    - [ ] How do you organize different Makefiles for different local and cloud environments
+          (tip directories) there re other ways to do this, but directories are easy.
+          Point to a document and sample showing this for two clouds (you can use local once or jetstream, chameleon)
+
+!!! note note "Assignment W4.2 VM on Jetstream 2"
+
+    1. Pick a local VM framework. Make sure it is installed.
+    2. Write a Makefile with all the targets that you need (which are they?) to manage a single VM
+    3. Can you manage multiple machines? How.
+
+!!! note note "Assignment W4.3 VM on Chameleon Cloud"
+
+    1. Pick a local VM framework. Make sure it is installed.
+    2. Write a Makefile with all the targets that you need (which are they?) to manage a single VM
+
+!!! note note "Assignment W4.4 Review Python"
+
+    In preparation for the upcoming weeks, please review your python knowledge. You can any resource you like, but we have provided a large amount of information about python (which you do not need all of it.) Therefore we recommend to strategically review sections that will be instrumental to Clouds, DevOps, and AI.
+    If there are any issues, please use Piazza to ask and we can narrow it down. This is a relatively simple activity and it should not take long. If it takes more than 3 hours  please use Piazza to find out where you may need some more help.
+
+    Please review:
+        
+    1. Setting up  python virtual environment. 
+        * You can use the one you use usually use such as venv or pyenv.
+        * Typically we discourage using conda and miniconda due to the potential that 
+            hundreds of unneeded libraries may be downloaded or a low level conflict may arise. For your project you will be asked not to use conda to keep the vms and containers clean. Use of conda has to be justified in a detailed justification and outline why other python virtualization technologies can not be used. 
+        * please not that the openstack commandline tool must be installed with pipx 
+    
+        See: [link](/section/python/python-install.md/#venv)
+    2. Using 
+        
+        * pip install
+        * pipx install
+
+        See: [link](/section/python/python-pipx.md)
+
+    3. Review how to use import statements such as `os.system`
+        Write a program that uses os.sytem("ls") (windows users must be in gitbash to make that work or in a vm using Linux.
+
+    4. Review how to create a __main__ 
+
+    5. Review how to write a function
+
+    5. Review how to pass arguments to the python program from commandline.
+
+    !!! tip 
+        I recommend click instead of argparse as there is a direct correlation between function name and parameters. click provides ease augmentations befor the function to transform it for you to a commanline interface. In other frameworks you have to do much more.
+            
+        See: [link](/section/python/python-click.md)
+
+    6. Review how to run shell commands from within python 
+
+        See: [link](/Users/grey/work/cloudmesh-ai-lecture/docs/section/python/python-subprocess.md)
+
+        Focus on `os.system()` and `supbrocess.run()`
+    
+
+
 ## Week 3
 
 * [ ] Assignment W3.1: VM on Jetstream (Due Sep 17, 2026, 9am)
