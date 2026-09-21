@@ -9,7 +9,7 @@ Note:
 
 ## Week 4 Tasks (Due Sep 24, 2026, 9am)
 
-- [ ]Assignment W4.1: VM on local machine via Makefile
+- [ ] Assignment W4.1: VM on local machine via Makefile
 
     - [ ] Pick a local VM framework and ensure it is installed.
     - [ ] Write a Makefile with all the necessary targets to manage a single VM.
