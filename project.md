@@ -17,7 +17,7 @@
 – e.g., a fast, low‑cost model for routine queries and a larger, more creative model for brainstorming.
 Currently our lab uses a single LLM deployed on a VM; swapping models requires manual re‑configuration and downtime.  
 
-**Proposed solution:**  Deploy **three containerised LLM back‑ends** (e.g., OpenAI GPT‑3.5‑Turbo,
+**Proposed solution:**  Deploy **three containerized LLM back‑ends** (e.g., OpenAI GPT‑3.5‑Turbo,
 Llama‑2‑7B, and a locally‑hosted Mistral‑7B) on **AWS ECS Fargate** (or Azure Container Instances).
 Build a **REST‑ful “LLM‑Chooser” service** that receives a request, inspects a lightweight meta‑parameter (`mode=fast|creative|balanced`),
 and forwards the prompt to the appropriate model.  The service will be **exposed via OpenWebUI** for a web UI, while a
@@ -50,7 +50,7 @@ programmatic access for downstream scripts.
 
 | In‑Scope | Out‑Of‑Scope |
 |----------|--------------|
-| • Containerising three LLMs (OpenAI API, Llama‑2, Mistral) | Training new models |
+| • Containerizing three LLMs (OpenAI API, Llama‑2, Mistral) | Training new models |
 | • LLM‑Chooser service (REST API) | • Enterprise‑grade SLA / 99.9 % uptime guarantee |
 | • VS Code CLI extension & Python SDK | • Full multi‑region deployment |
 | • IaC (Terraform), CI/CD (GitHub Actions) | • Data‑privacy compliance beyond class‑level demonstration |
@@ -131,7 +131,7 @@ The extension will invoke the Python SDK under the hood and print the model’s 
 
 | Phase | Tasks | Start | End |
 |-------|-------|-------|-----|
-| **Kick‑off** | Requirements finalisation, repo creation | 2026‑10‑01 | 2026‑10‑04 |
+| **Kick‑off** | Requirements finalization, repo creation | 2026‑10‑01 | 2026‑10‑04 |
 | **Design** | Architecture diagram, Terraform module layout, CLI spec | 2026‑10‑05 | 2026‑10‑12 |
 | **Implementation** | • Build Docker images <br> • Write chooser service (FastAPI) <br> • Write VS Code CLI (Node.js) <br> • Write Python SDK | 2026‑10‑13 | 2026‑11‑07 |
 | **CI/CD** | GitHub Actions workflow, Terraform apply to staging | 2026‑11‑08 | 2026‑11‑14 |
@@ -143,10 +143,10 @@ The extension will invoke the Python SDK under the hood and print the model’s 
 
 ### 7. Resources & Budget  
 
-To keep the budegt real small and do most of the development on the local computer,  we develop a mock llm service, that does not actually uses an llm but returns information in th esame format an LLM would return.  Before any cloud services are used, the implementation is done locally with the mock service, then it is replicated on the cloud. In the fnal step we will use real llm services, but will more carefully evaluate which are realistic. We propose t chose the smallest andcheapest possible models. The possibly not even need tou use GPUs.
+To keep the budget real small and do most of the development on the local computer,  we develop a mock llm service, that does not actually uses an llm but returns information in the same format an LLM would return.  Before any cloud services are used, the implementation is done locally with the mock service, then it is replicated on the cloud. In the final step we will use real llm services, but will more carefully evaluate which are realistic. We propose t chose the smallest and cheapest possible models. The possibly not even need to use GPUs.
 A configuration file in yaml will be used to describe the nature of the service and the resource need and where they are hosted. The chosen DevOps framework will then provision and stage the services.
 
-As part of this we plan also to investigate if hosting on kubernetes or EC2 like VMs is more easy to do and costeffective. We will only implement one solution however.
+As part of this we plan also to investigate if hosting on kubernetes or EC2 like VMs is more easy to do and cost-effective. We will only implement one solution however.
 
 | Resource | Qty | Cost (USD) | Reason |
 |----------|-----|------------|--------|
