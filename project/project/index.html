@@ -1,0 +1,1339 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Project - example Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#project-proposal-multillm-selection-service-with-vs-code-cli-openwebui-integration" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="example Documentation" class="md-header__button md-logo" aria-label="example Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            example Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Project
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Project
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="example Documentation" class="md-nav__button md-logo" aria-label="example Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    example Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-proposal-multillm-selection-service-with-vs-code-cli-openwebui-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project Proposal – Multi‑LLM Selection Service with VS Code CLI &amp; OpenWebUI Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Proposal – Multi‑LLM Selection Service with VS Code CLI &amp; OpenWebUI Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-executive-summary-150250-words" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Executive Summary (150‑250 words)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-objectives-success-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Objectives &amp; Success Criteria
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-technical-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Technical Approach
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Technical Approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-cloud-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Cloud Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-devops-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 DevOps Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-ai-model-serving" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 AI / Model Serving
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-vs-code-cli-extension" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 VS Code CLI Extension
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Security
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-project-plan-timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Project Plan &amp; Timeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-resources-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Resources &amp; Budget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-risk-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Risk Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-evaluation-success-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Evaluation &amp; Success Metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-deliverables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Deliverables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. References
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-proposal-multillm-selection-service-with-vs-code-cli-openwebui-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project Proposal – Multi‑LLM Selection Service with VS Code CLI &amp; OpenWebUI Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Proposal – Multi‑LLM Selection Service with VS Code CLI &amp; OpenWebUI Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-executive-summary-150250-words" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Executive Summary (150‑250 words)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-objectives-success-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Objectives &amp; Success Criteria
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-technical-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Technical Approach
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Technical Approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-cloud-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Cloud Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-devops-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 DevOps Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-ai-model-serving" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 AI / Model Serving
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-vs-code-cli-extension" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 VS Code CLI Extension
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Security
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-project-plan-timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Project Plan &amp; Timeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-resources-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Resources &amp; Budget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-risk-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Risk Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-evaluation-success-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Evaluation &amp; Success Metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-deliverables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Deliverables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. References
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Project</h1>
+
+<h2 id="project-proposal-multillm-selection-service-with-vs-code-cli-openwebui-integration">Project Proposal – Multi‑LLM Selection Service with VS Code CLI &amp; OpenWebUI Integration</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Course:</strong></td>
+<td>Cloud Computing, DevOps, and AI</td>
+</tr>
+<tr>
+<td><strong>Team Members</strong></td>
+<td>- <em>Alice</em> – DevOps Engineer  <br> - <em>Bob</em> – ML Engineer  <br> - <em>Cara</em> – Full‑stack Developer</td>
+</tr>
+<tr>
+<td><strong>Contact</strong></td>
+<td>email@example.com </td>
+</tr>
+<tr>
+<td><strong>Instructor</strong></td>
+<td>Gregor von Laszewski</td>
+</tr>
+<tr>
+<td><strong>Date</strong></td>
+<td><em>Dec. 10 2026</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="2-executive-summary-150250-words">2. Executive Summary (150‑250 words)</h3>
+<p><strong>Problem:</strong>  Modern AI‑enabled applications often need to switch between different large language models (LLMs)
+– e.g., a fast, low‑cost model for routine queries and a larger, more creative model for brainstorming.
+Currently our lab uses a single LLM deployed on a VM; swapping models requires manual re‑configuration and downtime.  </p>
+<p><strong>Proposed solution:</strong>  Deploy <strong>three containerised LLM back‑ends</strong> (e.g., OpenAI GPT‑3.5‑Turbo,
+Llama‑2‑7B, and a locally‑hosted Mistral‑7B) on <strong>AWS ECS Fargate</strong> (or Azure Container Instances).
+Build a <strong>REST‑ful “LLM‑Chooser” service</strong> that receives a request, inspects a lightweight meta‑parameter (<code>mode=fast|creative|balanced</code>),
+and forwards the prompt to the appropriate model.  The service will be <strong>exposed via OpenWebUI</strong> for a web UI, while a
+<strong>VS Code CLI extension</strong> (<code>llm-select</code>) lets developers invoke the chooser directly from the
+terminal (<code>llm-select --mode creative "Write a poem"</code>).  A small <strong>Python SDK</strong> (<code>llm_client.py</code>) provides
+programmatic access for downstream scripts.  </p>
+<p><strong>Benefits:</strong>  </p>
+<p>- Zero‑downtime model switching – users simply change the <code>mode</code> flag.<br />
+- Cost‑aware routing – the fast mode uses the cheapest model, saving ~ 40 % on API spend.<br />
+- Dev‑friendly interface – VS Code CLI + Python SDK streamline experimentation.<br />
+- Hands‑on experience with IaC (Terraform), CI/CD (GitHub Actions), container orchestration, and model serving.  </p>
+<hr />
+<h3 id="3-objectives-success-criteria">3. Objectives &amp; Success Criteria</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Objective</th>
+<th>Success Metric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Deploy three LLM containers on a managed serverless container platform.</td>
+<td>All three containers reachable via internal DNS; health‑check ≤ 2 % failure rate.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Implement the LLM‑Chooser micro‑service with a deterministic routing rule.</td>
+<td>100 % of test requests routed to the correct model according to <code>mode</code>.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Provide VS Code CLI (<code>llm-select</code>) and Python SDK (<code>llm_client.py</code>).</td>
+<td>CLI and SDK pass unit tests; documentation covers 5 common use‑cases.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Set up CI/CD pipeline that automatically builds Docker images, runs tests, and deploys to staging on every push.</td>
+<td>2‑minute pipeline run, 0 failed builds for 3 consecutive commits.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Demonstrate cost reduction compared with the single‑model baseline.</td>
+<td>Average API cost per 1 k tokens ≤ $0.025 (≈ 40 % lower).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="4-scope">4. Scope</h3>
+<table>
+<thead>
+<tr>
+<th>In‑Scope</th>
+<th>Out‑Of‑Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>• Containerising three LLMs (OpenAI API, Llama‑2, Mistral)</td>
+<td>Training new models</td>
+</tr>
+<tr>
+<td>• LLM‑Chooser service (REST API)</td>
+<td>• Enterprise‑grade SLA / 99.9 % uptime guarantee</td>
+</tr>
+<tr>
+<td>• VS Code CLI extension &amp; Python SDK</td>
+<td>• Full multi‑region deployment</td>
+</tr>
+<tr>
+<td>• IaC (Terraform), CI/CD (GitHub Actions)</td>
+<td>• Data‑privacy compliance beyond class‑level demonstration</td>
+</tr>
+<tr>
+<td>• Documentation, demo video</td>
+<td>• Production‑scale monitoring dashboards (only basic CloudWatch metrics)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Which LLMs to chose will be determined based on the resource capabilities.</li>
+</ul>
+<hr />
+<h3 id="5-technical-approach">5. Technical Approach</h3>
+<h4 id="51-cloud-architecture">5.1 Cloud Architecture</h4>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Service (AWS example)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Container Host</strong></td>
+<td>ECS Fargate (or Azure Container Instances)</td>
+<td>Serverless, pay‑per‑use, no VM management</td>
+</tr>
+<tr>
+<td><strong>LLM Back‑ends</strong></td>
+<td>- GPT‑3.5‑Turbo (via OpenAI API) <br> - Llama‑2‑7B (Docker image from HuggingFace) <br> - Mistral‑7B (Docker image)</td>
+<td>Each exposed on internal port 8000‑8002</td>
+</tr>
+<tr>
+<td><strong>LLM‑Chooser</strong></td>
+<td>ECS Service → API Gateway (public)</td>
+<td>Stateless Flask/FastAPI app</td>
+</tr>
+<tr>
+<td><strong>OpenWebUI</strong></td>
+<td>Separate ECS Service behind same API GW</td>
+<td>Connects to chooser via <code>/choose</code> endpoint</td>
+</tr>
+<tr>
+<td><strong>CI/CD</strong></td>
+<td>GitHub Actions → Terraform → ECS Deploy</td>
+<td>Automated on merge to <code>main</code></td>
+</tr>
+<tr>
+<td><strong>Observability</strong></td>
+<td>CloudWatch Logs &amp; Metrics</td>
+<td>Basic latency &amp; error rate alerts</td>
+</tr>
+</tbody>
+</table>
+<p><em>Diagram placeholder:</em><br />
+Insert a simple block diagram (Client → API GW → LLM‑Chooser → {GPT, Llama‑2, Mistral}). You can draw it in draw.io and embed as PNG.</p>
+<h4 id="52-devops-pipeline">5.2 DevOps Pipeline</h4>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Tool</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Source</strong></td>
+<td>GitHub</td>
+<td>Branch‑policy: <code>main</code> protected, PR must pass checks</td>
+</tr>
+<tr>
+<td><strong>Build</strong></td>
+<td>Docker Build (GitHub Actions)</td>
+<td>Build three images (llm‑chooser, openwebui, python‑sdk)</td>
+</tr>
+<tr>
+<td><strong>Test</strong></td>
+<td>PyTest, Bandit, Flake8</td>
+<td>Unit tests for routing logic, security scan</td>
+</tr>
+<tr>
+<td><strong>Deploy</strong></td>
+<td>Terraform + ECS Deploy Action</td>
+<td>Update task definitions, roll out to <strong>staging</strong> first, then <strong>prod</strong></td>
+</tr>
+<tr>
+<td><strong>Post‑Deploy</strong></td>
+<td>Smoke test script</td>
+<td>Calls <code>/healthz</code> on each service, reports success/failure</td>
+</tr>
+</tbody>
+</table>
+<h4 id="53-ai-model-serving">5.3 AI / Model Serving</h4>
+<pre><code class="language-python"># Sample code – see the execution block below for a runnable demo
+def route_prompt(prompt: str, mode: str) -&gt; str:
+    &quot;&quot;&quot;
+    Very simple routing rule:
+    - 'fast'      → OpenAI GPT‑3.5‑Turbo (cheapest, lowest latency)
+    - 'creative'  → Llama‑2‑7B (more parameters)
+    - 'balanced'  → Mistral‑7B (mid‑ground)
+    &quot;&quot;&quot;
+    # mapping of mode → endpoint URL (in reality you would load from env vars)
+    endpoints = {
+        &quot;fast&quot;: &quot;http://llm-gpt:8000/completions&quot;,
+        &quot;creative&quot;: &quot;http://llm-llama:8001/completions&quot;,
+        &quot;balanced&quot;: &quot;http://llm-mistral:8002/completions&quot;,
+    }
+    url = endpoints.get(mode, endpoints[&quot;balanced&quot;])
+    # Here we would `requests.post(url, json={&quot;prompt&quot;: prompt})`
+    # For demo we just return the chosen URL.
+    return f&quot;Routing to {url}&quot;
+</code></pre>
+<p>The <strong>Python SDK</strong> (<code>llm_client.py</code>) will expose a single function <code>ask(prompt, mode="balanced")</code> that 
+internally calls the chooser service, handles retries, and returns the model response.</p>
+<h4 id="54-vs-code-cli-extension">5.4 VS Code CLI Extension</h4>
+<p><em>Command</em>: <code>llm-select --mode &lt;fast|creative|balanced&gt; "&lt;prompt&gt;"</code>  </p>
+<p>The extension will invoke the Python SDK under the hood and print the model’s answer directly in the terminal.</p>
+<h4 id="55-security">5.5 Security</h4>
+<ul>
+<li><strong>IAM</strong>: least‑privilege role for ECS task execution.  </li>
+<li><strong>Secrets</strong>: OpenAI API key stored in AWS Secrets Manager; injected as env‑var at runtime.  </li>
+<li><strong>Network</strong>: LLM containers run in a private subnet; only the chooser has a public endpoint.  </li>
+<li><strong>TLS</strong>: API Gateway enforces HTTPS.</li>
+</ul>
+<hr />
+<h3 id="6-project-plan-timeline">6. Project Plan &amp; Timeline</h3>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Tasks</th>
+<th>Start</th>
+<th>End</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Kick‑off</strong></td>
+<td>Requirements finalisation, repo creation</td>
+<td>2026‑10‑01</td>
+<td>2026‑10‑04</td>
+</tr>
+<tr>
+<td><strong>Design</strong></td>
+<td>Architecture diagram, Terraform module layout, CLI spec</td>
+<td>2026‑10‑05</td>
+<td>2026‑10‑12</td>
+</tr>
+<tr>
+<td><strong>Implementation</strong></td>
+<td>• Build Docker images <br> • Write chooser service (FastAPI) <br> • Write VS Code CLI (Node.js) <br> • Write Python SDK</td>
+<td>2026‑10‑13</td>
+<td>2026‑11‑07</td>
+</tr>
+<tr>
+<td><strong>CI/CD</strong></td>
+<td>GitHub Actions workflow, Terraform apply to staging</td>
+<td>2026‑11‑08</td>
+<td>2026‑11‑14</td>
+</tr>
+<tr>
+<td><strong>Testing</strong></td>
+<td>Unit tests, integration tests (routing), load test (locust)</td>
+<td>2026‑11‑15</td>
+<td>2026‑11‑28</td>
+</tr>
+<tr>
+<td><strong>Demo &amp; Documentation</strong></td>
+<td>OpenWebUI UI, CLI demo video, README, hand‑off guide</td>
+<td>2026‑11‑29</td>
+<td>2026‑12‑05</td>
+</tr>
+<tr>
+<td><strong>Evaluation</strong></td>
+<td>Cost analysis, performance report, final presentation</td>
+<td>2026‑12‑06</td>
+<td>2026‑12‑12</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="7-resources-budget">7. Resources &amp; Budget</h3>
+<p>To keep the budegt real small and do most of the development on the local computer,  we develop a mock llm service, that does not actually uses an llm but returns information in th esame format an LLM would return.  Before any cloud services are used, the implementation is done locally with the mock service, then it is replicated on the cloud. In the fnal step we will use real llm services, but will more carefully evaluate which are realistic. We propose t chose the smallest andcheapest possible models. The possibly not even need tou use GPUs.
+A configuration file in yaml will be used to describe the nature of the service and the resource need and where they are hosted. The chosen DevOps framework will then provision and stage the services.</p>
+<p>As part of this we plan also to investigate if hosting on kubernetes or EC2 like VMs is more easy to do and costeffective. We will only implement one solution however.</p>
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Qty</th>
+<th>Cost (USD)</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AWS Fargate (vCPU 0.5, 1 GB RAM) – 3 services – 30 days</td>
+<td>–</td>
+<td>$80</td>
+<td>Container execution</td>
+</tr>
+<tr>
+<td>OpenAI GPT‑3.5‑Turbo usage (estimated 100 k tokens)</td>
+<td>–</td>
+<td>$20</td>
+<td>Model A cost</td>
+</tr>
+<tr>
+<td>S3 storage (logs, 50 GB)</td>
+<td>–</td>
+<td>$5</td>
+<td>Persistence</td>
+</tr>
+<tr>
+<td>GitHub Team plan (5 users)</td>
+<td>–</td>
+<td>$60</td>
+<td>Private repo &amp; Actions minutes</td>
+</tr>
+<tr>
+<td>Misc. – domain, SSL cert</td>
+<td>–</td>
+<td>$15</td>
+<td>Secure endpoint</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td><strong>≈ $180</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>(If your institution provides free credits, update accordingly.)</em></p>
+<hr />
+<h3 id="8-risk-management">8. Risk Management</h3>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Likelihood</th>
+<th>Impact</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cloud cost runaway (e.g., unlimited GPT calls)</td>
+<td>Medium</td>
+<td>High</td>
+<td>Set usage alerts in CloudWatch; enforce per‑user token quota in chooser.</td>
+</tr>
+<tr>
+<td>Model container crash → service downtime</td>
+<td>Low</td>
+<td>Medium</td>
+<td>Deploy each model in its own task with restart policy; health checks.</td>
+</tr>
+<tr>
+<td>CLI incompatibility across OSes</td>
+<td>Low</td>
+<td>Low</td>
+<td>Use Node.js + cross‑platform packaging (pkg) + automated CI build for Windows/macOS/Linux.</td>
+</tr>
+<tr>
+<td>Secrets leakage</td>
+<td>Low</td>
+<td>High</td>
+<td>Store keys only in Secrets Manager; no plain‑text in repo.</td>
+</tr>
+<tr>
+<td>Insufficient test coverage → routing bugs</td>
+<td>Low</td>
+<td>Medium</td>
+<td>Enforce 90 % coverage rule in CI; add mutation tests.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="9-evaluation-success-metrics">9. Evaluation &amp; Success Metrics</h3>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Target</th>
+<th>Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Average routing latency (prompt → response)</td>
+<td>≤ 1.2 s (fast mode)</td>
+<td>CloudWatch Custom Metric</td>
+</tr>
+<tr>
+<td>End‑to‑end cost per 1 k tokens</td>
+<td>≤ $0.025 (vs. baseline $0.041)</td>
+<td>OpenAI usage dashboard + custom script</td>
+</tr>
+<tr>
+<td>CLI success rate (no error)</td>
+<td>100 % over 100 automated calls</td>
+<td>GitHub Actions test matrix</td>
+</tr>
+<tr>
+<td>Documentation completeness</td>
+<td>100 % of required sections with examples</td>
+<td>Peer‑review checklist</td>
+</tr>
+<tr>
+<td>Student satisfaction (survey)</td>
+<td>≥ 4/5 average</td>
+<td>Post‑demo questionnaire</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="10-deliverables">10. Deliverables</h3>
+<table>
+<thead>
+<tr>
+<th>Deliverable</th>
+<th>Format</th>
+<th>Due</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Architecture diagram</td>
+<td>PNG / PDF</td>
+<td>End of Design</td>
+</tr>
+<tr>
+<td>Terraform IaC code</td>
+<td>.tf files (Git repo)</td>
+<td>End of Implementation</td>
+</tr>
+<tr>
+<td>LLM‑Chooser micro‑service</td>
+<td>Docker image (ECR) + source</td>
+<td>End of Implementation</td>
+</tr>
+<tr>
+<td>VS Code CLI extension</td>
+<td>VSIX package + README</td>
+<td>End of Implementation</td>
+</tr>
+<tr>
+<td>Python SDK (<code>llm_client.py</code>)</td>
+<td>.py file + docs</td>
+<td>End of Implementation</td>
+</tr>
+<tr>
+<td>OpenWebUI demo instance</td>
+<td>URL (staging)</td>
+<td>End of Demo</td>
+</tr>
+<tr>
+<td>Test suite (PyTest, locust)</td>
+<td>repo + CI badge</td>
+<td>End of Testing</td>
+</tr>
+<tr>
+<td>Final report &amp; presentation</td>
+<td>PDF + Slides</td>
+<td>End of Evaluation</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="11-references">11. References</h3>
+<ul>
+<li>AWS Well‑Architected Framework – <a href="https://aws.amazon.com/architecture/well-architected/">https://aws.amazon.com/architecture/well-architected/</a>  </li>
+<li>OpenAI API Documentation – <a href="https://platform.openai.com/docs/api-reference">https://platform.openai.com/docs/api-reference</a>  </li>
+<li>“Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation” – Jez Humble &amp; David Farley (2010)  </li>
+<li>HuggingFace Docker images for Llama‑2 &amp; Mistral – <a href="https://huggingface.co/models">https://huggingface.co/models</a>  </li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
